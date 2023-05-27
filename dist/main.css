@@ -4,8 +4,7 @@
     left: 50%;
 
     width: 500px;
-    padding: 0 15px 20px 15px;
-    padding-top: 0;
+    padding: 15px;
 
     background-color: bisque;
     border-radius: 10px;
@@ -25,38 +24,38 @@
 }
 
 .widget__card-img-mir {
-    background: no-repeat url(../img/mir-wb.png);
+    background: no-repeat url(8d6696df58780a3c810a.png);
 }
 
 .mir_active {
-    background: no-repeat url(../img/mir-color.png);
+    background: no-repeat url(ea4f7f16d1cffcaf7a4a.png);
 }
 
 
 .widget__card-img-visa {
-    background: no-repeat url(../img/visa-wb.png);
+    background: no-repeat url(e7d2412e028344fb2fac.png);
 }
 
 .visa_active {
-    background: no-repeat url(../img/visa-color.png);
+    background: no-repeat url(020c268e86a8b9a27044.png);
 }
 
 
 .widget__card-img-master-card {
-    background: no-repeat url(../img/mastercard-wb.png);
+    background: no-repeat url(ef7466b1bccdf74e9043.png);
 }
 
 .master-card_active {
-    background: no-repeat url(../img/mastercard-color.png);
+    background: no-repeat url(efdbcaa245cd9ca615ec.png);
 }
 
 
 .widget__card-img-american-express {
-    background: no-repeat url(../img/americanexpress-wb.png);
+    background: no-repeat url(4165c3ef76a810ba08a2.png);
 }
 
 .american-express_active {
-    background: no-repeat url(../img/american-express-color.png);
+    background: no-repeat url(b7863b15e8b0f02952f9.png);
 }
 
 
@@ -85,14 +84,6 @@
     border-radius: 7px;
 }
 
-.valid {
-    border: 1px solid rgba(20, 229, 8, 0.548);
-}
-
-.invalid {
-    border: 1px solid rgba(232, 12, 12, 0.548);
-}
-
 .widget__wr-form-button {
     display: flex;
 
@@ -110,3 +101,5 @@
 
     cursor: pointer;
 }
+
+/*# sourceMappingURL=main.css.map*/

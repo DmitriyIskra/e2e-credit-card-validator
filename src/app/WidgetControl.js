@@ -48,10 +48,25 @@ export default class WidgetControl {
         }
     }
 
-    // Убирает подсветку системы оплаты если данные в поле были полностью стерты
+    // Убирает подсветку системы оплаты 
     clearCards() {
         if(this.lastCardIcon) {
             this.lastCardIcon.classList.remove(`${this.lastTypeCard}_active`);
+            this.lastCardIcon = null;
+            this.lastTypeCard = null;
         }
+    }
+
+
+    renderInput(value) {
+        console.log(value)
+        if(value) {
+            this.input.classList.remove('invalid');
+            this.input.classList.add('valid');
+        } else {
+            this.input.classList.remove('valid');
+            this.input.classList.add('invalid');
+        }
+        
     }
 }

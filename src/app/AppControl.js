@@ -15,16 +15,26 @@ export default class AppControl {
     clickValidate(e) {
         e.preventDefault();
 
+        if(this.widget.lastCardIcon) {
+            this.widget.clearCards();
+        }
+
         const value = this.widget.getValue();
 
         let typeSystem = this.system.getSystem(value);
 
         if(typeSystem) {
-            this.widget.renderPaySystem(typeSystem)
+            this.widget.renderPaySystem(typeSystem);
         }
+
+        this.widget.renderInput(
+            this.validate.validateNum(value)
+        );
+                
+        
     }
 
-    // проверка крайнего символа при вводе на цифру 
+    // проверка крайнего символа на цифру при вводе  
     validateOnlyNumbers() {
         let value = this.widget.getValue();
 
