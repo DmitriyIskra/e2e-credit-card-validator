@@ -1,0 +1,1 @@
+![CI](https://github.com/DmitriyIskra/e2e-credit-card-validator/actions/workflows/web.yml/badge.svg)
