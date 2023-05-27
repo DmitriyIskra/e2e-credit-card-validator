@@ -19,19 +19,20 @@ export default class AppControl {
             this.widget.clearCards();
         }
 
+        // Получаем значение из поля
         const value = this.widget.getValue();
-
+        // Валидируем значение из поля
+        const resultValidate = this.validate.validateNum(value);
+        // получаем значение какая платежная система, если найдено
         let typeSystem = this.system.getSystem(value);
-
-        if(typeSystem) {
+        
+        // Если все данные true отрисовываем иконку платежной системы
+        if(typeSystem && resultValidate) {    
             this.widget.renderPaySystem(typeSystem);
         }
 
-        this.widget.renderInput(
-            this.validate.validateNum(value)
-        );
-                
-        
+        // Подсвечиваем рамку поля ввода соответствующим цветом
+        this.widget.renderInput(resultValidate);    
     }
 
     // проверка крайнего символа на цифру при вводе  
